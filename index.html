@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+   <!-- Header/Navbar -->
+  <header>
+    <div class="container navbar">
+      <h2 class="logo">< >CodeDeily</h2>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <nav id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-extra">
+          <input type="text" placeholder="Search..." class="search-input" />
+          <a href="#" class="login-btn" id="loginBtn">Login</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Start With <span id="typed-text"></span></h1>
+      <p class="hero-subtitle">Kickstart your coding journey with beginner-friendly lessons and real projects.</p>
+      <button class="btn primary" id="registerBtn">Register Now</button>
+    </div>
+  </section>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label>Email:</label>
+        <input type="email" required />
+        <label>Password:</label>
+        <input type="password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal" id="registerModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Register</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+   <!-- Tutorials -->
+<section  id="tutorials" class="section-tutorials">
+  <main class="containers">
+    <h2 class="page-title">Tutorials</h2>
+    <div class="grid">
+      <div class="card"><h3>HTML Basics</h3><p>Learn the building blocks of web pages: headings, paragraphs, links, and more.</p><a href="#" class="btn">HTML</a></div>
+      <div class="card"><h3>CSS Fundamentals</h3><p>Style your web pages with color, layout, fonts, and animations.</p><a href="#" class="btn">CSS</a></div>
+      <div class="card"><h3>JavaScript</h3><p>Make your websites interactive with logic, loops, functions, and DOM manipulation.</p><a href="#" class="btn">JavaScript</a></div>
+      <div class="card"><h3>Python</h3><p>Start coding with Python — the most beginner-friendly language for automation and logic.</p><a href="#" class="btn">Python</a></div>
+      <div class="card"><h3>Responsive Design</h3><p>Make your websites mobile-friendly using CSS Flexbox and Grid.</p><a href="#" class="btn">Responsive</a></div>
+      <div class="card"><h3>Git & GitHub</h3><p>Learn version control and how to publish your projects online.</p><a href="#" class="btn">Git/GitHub</a></div>
+    </div>
+  </main>
+</section>
+
+ <!-- === Features Section === -->
+  <section class="features-section">
+    <div class="contain">
+      <h3 class="section-title">Why Learn With Us?</h3>
+      <div class="grid">
+        <div class="feature-card">
+          <h4>✅Beginner Friendly</h4>
+          <p>Start from zero with step-by-step guidance. No prior coding knowledge needed.</p>
+        </div>
+        <div class="feature-card">
+          <h4>🧪Hands-on Projects</h4>
+          <p>Learn by doing! Build real-world projects to practice what you learn.</p>
+        </div>
+        <div class="feature-card">
+          <h4>💯 Free Learning Resources</h4>
+          <p>Access tutorials, projects, and tools — all completely free.</p>
+        </div>
+        <div class="feature-card">
+          <h4>👨‍🏫 Mentor Support (optional)</h4>
+          <p>Get help from experienced developers and mentors.</p>
+        </div>
+        <div class="feature-card">
+          <h4>🧠 Learn at Your Pace</h4>
+          <p>No deadlines. Study whenever it fits your schedule.</p>
+        </div>
+        <div class="feature-card">
+          <h4>🌐 Community Support</h4>
+          <p>Join a supportive community of learners to share knowledge and</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Projects -->
+<section id="projects" class="section-projects">
+  <main class="containers">
+    <h2 class="page-title">Practice Projects</h2>
+    <div class="grid">
+      <div class="project-card"><h3>Portfolio Website</h3><p>Create your own portfolio page using HTML structure.</p><a href="#" class="btn">View</a></div>
+      <div class="project-card"><h3> Landing Page Design</h3><p>Use CSS to style and layout a product landing page.</p><a href="#" class="btn">View</a></div>
+      <div class="project-card"><h3>To-Do List</h3><p>Build a task manager using JavaScript and DOM manipulation.</p><a href="#" class="btn">View</a></div>
+      <div class="project-card"><h3>Number Guessing Game</h3><p>Create a terminal game using Python and random module.</p><a href="#" class="btn">View</a></div>
+      <div class="project-card"><h3>Responsive Blog Page</h3><p>Make a mobile-friendly blog layout using media queries.</p><a href="#" class="btn">View</a></div>
+      <div class="project-card"><h3>Version Controlled Project</h3><p>Initialize a Git repo and push your code to GitHub.</p><a href="#" class="btn">View</a></div>
+    </div>
+  </main>
+</section>
+
+<!-- Blog -->
+<section id="blog" class="section-blog">
+  <main class="containers">
+    <h2 class="page-title">Blog</h2>
+    <div class="grid">
+      <div class="blog-card"><h3>How to structure a webpage</h3><p>HTML tags, layout tips</p><a href="#" class="btn">Read</a></div>
+      <div class="blog-card"><h3>CSS Tips for Beginners</h3><p>Common styling mistakes.</p><a href="#" class="btn">Read</a></div>
+      <div class="blog-card"><h3> JavaScript Concepts Simplified</h3><p>Variables, loops, events.</p><a href="#" class="btn">Read</a></div>
+      <div class="blog-card"><h3>  Responsive Design Guide</h3><p>Flexbox/Grid + Media Queries.</p><a href="#" class="btn">Read</a></div>
+      <div class="blog-card"><h3>  Using Git & GitHub</h3><p>Version control 101.</p><a href="#" class="btn">Read</a></div>
+      <div class="blog-card"><h3>Project-Based Learning</h3><p>Why it’s effective for web dev.</p><a href="#" class="btn">Read</a></div>
+    </div>
+  </main>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section-contact">
+  <main class="containers">
+    <h2 class="page-title">Let’s Connect</h2>
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+</section>
+<!-- Footer -->
+<footer>
+  <div class="containers">
+    <p>&copy; 2025 CodeDeily. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script>
+    // Navbar Toggle
+    const menuIcon = document.getElementById("menu-icon");
+    const navbar = document.querySelector(".navbar");
+
+    menuIcon.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+
+    // Login Modal
+    const loginBtn = document.getElementById("loginBtn");
+    const loginModal = document.getElementById("loginModal");
+    const closeLogin = document.getElementById("closeLogin");
+
+    loginBtn.addEventListener("click", () => {
+      loginModal.style.display = "flex";
+    });
+
+    closeLogin.addEventListener("click", () => {
+      loginModal.style.display = "none";
+    });
+
+    // Register Modal
+    const registerBtn = document.getElementById("registerBtn");
+    const registerModal = document.getElementById("registerModal");
+    const closeModal = document.getElementById("closeModal");
+
+    registerBtn.addEventListener("click", () => {
+      registerModal.style.display = "flex";
+    });
+
+    closeModal.addEventListener("click", () => {
+      registerModal.style.display = "none";
+    });
+
+    // Close modals when clicking outside
+    window.addEventListener("click", (e) => {
+      if (e.target === loginModal) loginModal.style.display = "none";
+      if (e.target === registerModal) registerModal.style.display = "none";
+    });
+
+    // Typing Animation
+    const texts = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Python",
+  "Responsive Design",
+  "Git & GitHub"
+];
+
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+      if (count === texts.length) count = 0;
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+      document.getElementById("typed-text").textContent = letter;
+
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1000);
+      } else {
+        setTimeout(type, 150);
+      }
+    })();
+ 
+    // Background Slider
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = [
+        "images.jpg",
+        "langvages.jpg",
+        "team.jpg",
+        "laptop.jpg"
+      ];
+      let current = 0;
+      const heroSection = document.querySelector(".hero-section");
+
+      heroSection.style.backgroundImage = `url(${images[current]})`;
+
+      setInterval(() => {
+        current = (current + 1) % images.length;
+        heroSection.style.backgroundImage = `url(${images[current]})`;
+      }, 4000);
+    });
+    // Smooth Scroll for buttons (if they link with #id)
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Contact Form Validation (just for example)
+  document.querySelector('.contact-form')?.addEventListener('submit', function (e) {
+    const name = document.querySelector('#name').value.trim();
+    const email = document.querySelector('#email').value.trim();
+    const message = document.querySelector('#message').value.trim();
+
+    if (!name || !email || !message) {
+      e.preventDefault();
+      alert('Please fill in all fields before submitting.');
+    }
+  });
+
+  // Simple toast on button click (optional feature)
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      console.log('Button clicked:', btn.textContent);
+    });
+  });
+    const cards = document.querySelectorAll('.feature-card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        alert(`You clicked on "${card.querySelector('h4').textContent}"`);
+      });
+    });
+  </script>
+</body>
+</html>
